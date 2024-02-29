@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/0f57e28179.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="w-3/5 w-9/12 my-8 mx-auto bg-cyan-300 ">
+        <h1 class="text-4xl font-bold text-center p-5">My Text Editor</h1>
+        <div class="w-4/5 my-3 mx-auto p-2 bg-sky-800">
+            <div>
+                <div class="flex justify-around">
+                    <div class="font-Style">
+                        <button id="bold" class="py-2 px-4 active:bg-black rounded-full"><i class="fa-solid fa-bold" style="color: #ffffff;"></i></button>
+                        <button id="italic" class="py-2 px-4 active:bg-black rounded-full"><i class="fa-solid fa-italic" style="color: #ffffff;"></i></button>
+                        <button id="underline" class="py-2 px-4 active:bg-black rounded-full"><i class="fa-solid fa-underline" style="color: #ffffff;"></i></button>
+                    </div>
+                    <div>
+                        <button id="left" class="py-2 px-4 active:bg-black rounded-full"><i class="fa-solid fa-align-left" style="color: #ffffff;"></i></button>
+                        <button id="center" class="py-2 px-4 active:bg-black rounded-full"><i class="fa-solid fa-align-center" style="color: #ffffff;"></i></button>
+                        <button id="right" class="py-2 px-4 active:bg-black rounded-full"><i class="fa-solid fa-align-right" style="color: #ffffff;"></i></button>
+                        <button id="justify" class="py-2 px-4 active:bg-black rounded-full"><i class="fa-solid fa-align-justify" style="color: #ffffff;"></i></button>
+                    </div>
+                    <div class="space-x-2">
+                        <input class="text-center border-2 border-solid border-slate-950" type="number" id="valueInput" value="0" min="0" max="30">                 
+                        <span class="font-bold">aA</span>
+                        <input type="color" name="" id="">
+                    </div>
+                </div>
+            </div>
+            <div class="w-4/5 my-3 mx-auto">
+                <textarea id="textArea" class="p-2" name="" id="" cols="80" rows="10"></textarea>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
